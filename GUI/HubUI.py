@@ -69,6 +69,9 @@ game_running = True
 while game_running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            run = False
+            game_running = False
+        elif event.type == pygame.MOUSEBUTTONUP:
+            mouse_pos = pygame.mouse.get_pos()
+            
 
-pygame.QU
+quit()
